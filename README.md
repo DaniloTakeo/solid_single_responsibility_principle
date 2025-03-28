@@ -74,3 +74,7 @@ O problema foi resolvido dividindo as responsabilidades:
 
 ⚡ Desenvolvido para praticar **SOLID** e boas práticas de programação em **Java**.
 
+---
+
+## 👨‍💻 Autor
+Danilo Takeo Kanizawa
