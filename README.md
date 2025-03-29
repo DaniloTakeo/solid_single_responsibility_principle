@@ -63,6 +63,26 @@ O problema foi resolvido dividindo as responsabilidades:
 
 ---
 
+### 📦 **Case 3 - Processamento de Pedidos**
+#### ❌ Problema:
+A classe `Order` tem múltiplas responsabilidades:
+- Gerencia os dados do pedido.
+- Calcula o valor total do pedido.
+- Processa o pagamento do pedido.
+- Envia uma notificação ao cliente.
+
+Isso viola o **SRP**, pois são responsabilidades distintas.
+
+#### ✅ Solução:
+O problema foi resolvido separando as responsabilidades:
+- `Order.java`: Apenas representa um pedido e calcula o total.
+- `PaymentProcessor.java`: Responsável por processar o pagamento.
+- `EmailService.java`: Responsável pelo envio de e-mails.
+
+Isso melhora a organização do código, facilitando manutenção, testes e reuso.
+
+---
+
 ## 🚀 Como Usar
 
 1. Explore os **cases** dentro do diretório `src/`.
