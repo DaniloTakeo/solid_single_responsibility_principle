@@ -83,6 +83,25 @@ Isso melhora a organização do código, facilitando manutenção, testes e reus
 
 ---
 
+### 📊 **Case 4 - Relatório de Vendas**
+#### ❌ Problema:
+A classe `SalesReport` tem múltiplas responsabilidades:
+- Gera o relatório de vendas.
+- Exporta o relatório para um arquivo CSV.
+- Exibe o relatório no console.
+
+Isso viola o **SRP**, pois a classe deveria se preocupar apenas com a geração dos dados do relatório e não com a forma como eles serão exibidos ou armazenados.
+
+#### ✅ Solução:
+O problema foi resolvido separando as responsabilidades:
+- `SalesReport.java`: Responsável apenas por armazenar e gerar os dados do relatório.
+- `CSVExporter.java`: Responsável por exportar o relatório para CSV.
+- `ReportPrinter.java`: Responsável por exibir o relatório no console.
+
+Isso melhora a organização do código, facilitando manutenção, testes e reuso.
+
+---
+
 ## 🚀 Como Usar
 
 1. Explore os **cases** dentro do diretório `src/`.
